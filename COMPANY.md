@@ -1,5 +1,7 @@
 # Mosaic Development — Company OS
 
+> See also: [ROADMAP.md](ROADMAP.md) — agent architecture and long-term build plan
+
 > **This document is the source of truth for all AI agents, coding sessions, and automation systems operating on behalf of Mosaic Development. Read this before doing anything. When in doubt, update this file.**
 
 ---
@@ -154,27 +156,37 @@ Alfred is the **primary writer** to this Company OS. When meaningful things happ
 ---
 
 ### 6.3 Reginald (Personal / Household Agent)
-**Status:** Live — reactive mode. Autonomous layer not yet activated.  
-**Hosting:** Hetzner VPS  
+**Status:** Live — fully operational  
+**Hosting:** Hetzner VPS · `hermes-gateway.service`  
 **Interface:** Telegram (Ben + Emily)  
+**Doppler project:** `reginald`
 
-**Scope:** Personal and household only. Reginald knows about Ben's life, schedule, and home — not Mosaic operations. Ben can ask Reginald business questions as they relate to his personal time and priorities, but Reginald does not write to the Company OS and Donovan is not a user.
+**Scope:** Personal and household only. Reginald knows about Ben's life, schedule, and home — not Mosaic operations. Donovan is not a user.
 
-**What Reginald can do today:**
-- Respond to messages from Ben and Emily in character
-- Persistent memory — household facts, goals, preferences survive across sessions
-- Task management — read/write to Reginald data API (`/api/tasks/capture` etc.)
-- Query dashboard API for tasks, chores, calendar data
+**What Reginald can do:**
+- Telegram interface for Ben and Emily (separate cron check-ins for each)
+- Persistent memory across sessions
+- Daily accountability crons: Ben (wake 5:30, work 8:30, EOD 5:30, wind down 9:30) · Emily (7:30, 5:00)
+- Google Calendar — ben@mosaicdev.co connected (Gmail + Calendar + Drive + Sheets + Docs)
 - Read and write to GitHub repos
-- Spawn Claude Code agents on the VPS to build and push code
+- Spawn Claude Code agents on the VPS
 - Web search and browser
-- MCP — can connect to external tools once registered
+- Task management via Reginald backend API
 
-**What Reginald cannot do yet:**
-- Morning check-in cron (not scheduled)
-- Google Calendar (OAuth not connected)
-- Email (not connected)
-- Proactive alerts (nothing running autonomously)
+### 6.4 Clara Voss (Permit & Email Agent)
+**Status:** Live  
+**Hosting:** Hetzner VPS · `hermes-clara.service`  
+**Interface:** Telegram (Ben only)  
+**Doppler project:** `clara`
+
+**Scope:** Mosaic project email triage, permit tracking, and consultant management.
+
+**What Clara can do:**
+- Monitor ben@mosaicdev.co for project-related email
+- Draft responses and surface for Ben's approval before sending
+- Read/write Google Drive (scoped to Mosaic project documents folder only)
+- Read/write mosaic-project-memory GitHub repo (status, action items, logs)
+- CC Ben on all outbound email — never sends autonomously
 
 ---
 
