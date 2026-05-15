@@ -36,9 +36,10 @@ Ben Tinklenberg
       │     Home: /root/.hermes-margot · hermes-margot.service
       │
       ├── Jack (Contractor Scout)  [PLANNED]
-      │     Local contractor outreach · lead generation
-      │     Monitors Silicon Valley Facebook groups, community pages
-      │     Drafts RFPs and initial outreach messages
+      │     Lead generation · contractor partnerships
+      │     Monitors Silicon Valley Facebook groups for Class B contractors
+      │     Identifies partnership opportunities from group activity
+      │     Drafts outreach and partnership proposals
       │     Interface: Telegram (Ben only)
       │     Home: /root/.hermes-jack · hermes-jack.service
       │
@@ -166,7 +167,7 @@ Clara reads and writes only within this folder. She does not touch the admin fol
 - Clara portal status checking (San Mateo County Accela)
 - Clara Drive document filing (save city correspondence to correct project folder)
 - Vera Chen — zoning research agent (polls screener DB hourly, researches jurisdiction zoning)
-- Jack (Contractor Scout) — monitors Facebook groups, drafts contractor outreach
+- Jack (Contractor Scout) — finds Class B contractors in Silicon Valley for housing pipeline partnerships
 - Alfred Quartersworth (business CoS — fork of Reginald stack)
 - Mosaic deal screener as MCP tool callable by Alfred
 
