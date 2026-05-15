@@ -39,9 +39,18 @@ Ben Tinklenberg
       │     Lead generation · contractor partnerships
       │     Monitors Silicon Valley Facebook groups for Class B contractors
       │     Identifies partnership opportunities from group activity
-      │     Drafts outreach and partnership proposals
+      │     Surfaces contact info for Ben's approval · fires templated outreach
       │     Interface: Telegram (Ben only)
       │     Home: /root/.hermes-jack · hermes-jack.service
+      │
+      ├── Conner (Listing Agent Scout)  [PLANNED]
+      │     Lead generation · off-market sourcing
+      │     Monitors dead/missed deals from screener for listing agent intel
+      │     Tracks listing ages, agent contacts, market history
+      │     Surfaces listing agents with new opportunities
+      │     Fires templated buy-box intro emails
+      │     Interface: Telegram (Ben only)
+      │     Home: /root/.hermes-conner · hermes-conner.service
       │
       └── Alfred Quartersworth  [PLANNED]
             Business CoS · orchestrates Mosaic automation
@@ -168,6 +177,7 @@ Clara reads and writes only within this folder. She does not touch the admin fol
 - Clara Drive document filing (save city correspondence to correct project folder)
 - Vera Chen — zoning research agent (polls screener DB hourly, researches jurisdiction zoning)
 - Jack (Contractor Scout) — finds Class B contractors in Silicon Valley for housing pipeline partnerships
+- Conner (Listing Agent Scout) — monitors missed deals, reaches out to listing agents with buy-box intro
 - Alfred Quartersworth (business CoS — fork of Reginald stack)
 - Mosaic deal screener as MCP tool callable by Alfred
 
