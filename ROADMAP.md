@@ -21,6 +21,27 @@ Ben Tinklenberg
       │     Interface: Telegram (Ben only)
       │     Home: /root/.hermes-clara · hermes-clara.service
       │
+      ├── Vera Chen  [PLANNED]
+      │     Zoning research · due diligence automation
+      │     Monitors new active deals · researches jurisdiction zoning
+      │     Writes findings back to screener DB
+      │     No Telegram (background agent)
+      │     Home: /root/.hermes-vera · hermes-vera.service
+      │
+      ├── Margot  [PLANNED]
+      │     Social media strategist · content production
+      │     Drafts LinkedIn posts and X tweets for Ben's voice
+      │     Monitors completed deals and project milestones
+      │     Interface: Telegram (Ben only)
+      │     Home: /root/.hermes-margot · hermes-margot.service
+      │
+      ├── Jack (Contractor Scout)  [PLANNED]
+      │     Local contractor outreach · lead generation
+      │     Monitors Silicon Valley Facebook groups, community pages
+      │     Drafts RFPs and initial outreach messages
+      │     Interface: Telegram (Ben only)
+      │     Home: /root/.hermes-jack · hermes-jack.service
+      │
       └── Alfred Quartersworth  [PLANNED]
             Business CoS · orchestrates Mosaic automation
             Interface: Telegram (Ben + Donovan)
@@ -144,6 +165,8 @@ Clara reads and writes only within this folder. She does not touch the admin fol
 - Clara email triage cron (fires when Ben messages Clara on Telegram)
 - Clara portal status checking (San Mateo County Accela)
 - Clara Drive document filing (save city correspondence to correct project folder)
+- Vera Chen — zoning research agent (polls screener DB hourly, researches jurisdiction zoning)
+- Jack (Contractor Scout) — monitors Facebook groups, drafts contractor outreach
 - Alfred Quartersworth (business CoS — fork of Reginald stack)
 - Mosaic deal screener as MCP tool callable by Alfred
 
@@ -174,3 +197,4 @@ Clara reads and writes only within this folder. She does not touch the admin fol
 ---
 
 *Reginald Pemberton IV, CoS — Tinklenberg household*
+
